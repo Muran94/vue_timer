@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue"></script>
+  <title>Vue.jsで作るタイマー</title>
+</head>
+<body>
+
+  <div id="app" class="container">
+    <div id="light" :style="{ width: lightLength }"></div>
+    <div id="timer">{{ timeDisp }}</div>
+    <div class="buttons">
+      <div class="button" id="min" @click="addMin">MIN</div>
+      <div class="button" id="sec" @click="addSec">SEC</div>
+      <div class="button" id="reset" @click="reset">RESET</div>
+      <div class="button" id="start" @click="start">{{ startStopButtonLabel }}</div>
+    </div>
+  </div>
+
+  <script src="vue.js"></script>
+</body>
+</html>

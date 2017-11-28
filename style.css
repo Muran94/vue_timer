@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'NotoSans-Medium';
+  src: url('NotoSans-Medium.ttf');
+}
+body {
+  font-family: 'NotoSans-Medium', sans-serif;
+  background: #000;
+  color: #0af;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.container {
+  width: 540px;
+  margin: 50px auto;
+  text-align: center;
+  background: #111;
+}
+#light {
+  height: 10px;
+  background: #0af;
+}
+#timer {
+  height: 60px;
+  padding: 50px;
+  line-height: 60px;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.buttons {
+  overflow: hidden;
+}
+.button {
+  width: 120px;
+  padding: 7px;
+  background: #0af;
+  box-shadow: 0 2px 4px #08c;
+  box-sizing: border-box;
+  color: #000;
+  float: left;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.button:hover {
+  opacity: .7;
+}
+.button + .button {
+  margin-left: 20px;
+}
